@@ -39,6 +39,10 @@ a {
 /* хедер */
 
 .logo {
+  display: block;
+  margin-left: 0;
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -51,13 +55,27 @@ a {
 
 /* меню */
 
+.link.current {
+  color: var(--accent-color);
+}
+
 .menu {
   display: flex;
 }
 
-.menu li:not(:last-child) {
-  margin-right: 50px;
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.menu li + li {
+    margin-left: 50px;
+}
+
+/* .menu li:not(:last-child) {
+  margin-right: 50px;
+} */
 /* .menu li {
   margin-right: 50px;
 }
@@ -67,7 +85,10 @@ a {
 } */
 
 
-.menu .link {
+.menu a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   color: var(--title-text-color);
 }
@@ -78,6 +99,14 @@ a {
 }
 
 /* контакти хедера*/
+
+.contact-header {
+  display: flex;
+}
+
+.contact-header .item + .item {
+  margin-left: 50px;
+}
 
 .contact-header .link {
   font-weight: 500;
@@ -93,14 +122,21 @@ a {
 
 /* герой */
 
+.container.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero {
   text-align: center;
   background-color: var(--hero-bg-color);
 }
 
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -138,6 +174,11 @@ a {
   margin-top: 30px;
 }
 /* Наші плюси */
+
+.pluses {
+  display: flex;
+  margin-top: 94px;
+}
 
 .section-studia .title {
   margin-top: 0;
@@ -270,3 +311,4 @@ a {
   margin-right: auto;
   width: 1200px;
 }
+
