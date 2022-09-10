@@ -14,7 +14,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -43,7 +43,7 @@ a {
   margin-left: 0;
   margin-right: 93px;
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: var(--logo-color);
@@ -64,13 +64,12 @@ a {
 }
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
   align-items: center;
 }
 
 .menu li + li {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 /* .menu li:not(:last-child) {
@@ -83,7 +82,6 @@ a {
 .menu li:last-child {
   margin-right: 0;
 } */
-
 
 .menu a {
   display: block;
@@ -102,6 +100,7 @@ a {
 
 .contact-header {
   display: flex;
+  margin-left: auto; /* .main-nav {justify-content: space-between;} */
 }
 
 .contact-header .item + .item {
@@ -135,7 +134,6 @@ a {
 }
 
 .hero-title {
-  
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -166,7 +164,6 @@ a {
 
 .hero-button:hover,
 .hero-button:focus {
- 
   width: 216px;
   height: 50px;
   margin-left: auto;
@@ -177,7 +174,16 @@ a {
 
 .pluses {
   display: flex;
+  justify-content: center;
   margin-top: 94px;
+  }
+
+.pluses-box {
+  width: 270px;
+}
+
+.pluses-box + .pluses-box {
+margin-left: 30px;
 }
 
 .section-studia .title {
@@ -199,14 +205,48 @@ a {
 }
 
 .text {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 0;
   line-height: 1.7;
 }
 
+/* чим ми займаємося */
+
+.work {
+margin-top: 94px;
+}
+
+.work .list {
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.list li + li {
+margin-left: 30px;
+}
 /* наша команда */
 
+.section-team {
+margin-top: 94px;
+}
+
+.section-team .title {
+padding-top: 94px;
+}
+
+.team {
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.team .listed + .listed {
+margin-left: 30px;
+}
 .name {
+  margin-top: 30px;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -214,34 +254,53 @@ a {
 }
 
 .job {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 0;
+  padding-bottom: 30px;
   font-size: 16px;
   text-align: center;
+}
+
+.list-card {
+  outline: 1px solid red;
 }
 
 /* футер */
 
 .footer {
+  margin-top: 94px;
   background-color: var(--hero-bg-color);
 }
 
 .logo-footer {
-  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 215px;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: var(--header-bg-color);
 }
 
+.contact-footer {
+margin-left: 215px;
+margin-top: 20px;
+}
 
 .contact-footer .link {
+  padding-bottom: 9px;
   font-style: normal;
   line-height: 1.7;
   color: var(--contact-footer-color);
 }
 
+.link.last {
+  padding: 0;
+}
+
+
 .link.address {
-   color: var(--header-bg-color);
+  color: var(--header-bg-color);
 }
 
 .contact-footer .link:hover,
@@ -266,7 +325,7 @@ a {
   padding: 6px 22px;
   border-radius: 4px;
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -280,7 +339,8 @@ a {
 
 .filtrs .button:hover,
 .filtrs .button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--header-bg-color);
   background-color: var(--accent-color);
 }
@@ -311,4 +371,3 @@ a {
   margin-right: auto;
   width: 1200px;
 }
-
