@@ -199,3 +199,12 @@ a {
   line-height: 1.9;
   color: var(--primary-text-color);
 }
+
+/* контейнери */
+
+.container {
+  outline: 1px dashed red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
