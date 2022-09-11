@@ -11,9 +11,11 @@ font-family: 'Roboto', sans-serif; */
   --secondary-bg-color: #f5f4fa;
   --hero-bg-color: #2f303a;
   --contact-footer-color: rgba(255, 255, 255, 0.6);
+  --color-button-filters: rgba(33, 33, 33, 1);
 }
 
 body {
+  width: 1600px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.2;
@@ -261,9 +263,6 @@ margin-left: 30px;
   text-align: center;
 }
 
-.list-card {
-  outline: 1px solid red;
-}
 
 /* футер */
 
@@ -275,7 +274,6 @@ margin-left: 30px;
 .logo-footer {
   display: inline-block;
   margin-top: 60px;
-  margin-left: 215px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -283,7 +281,6 @@ margin-left: 30px;
 }
 
 .contact-footer {
-margin-left: 215px;
 margin-top: 20px;
 }
 
@@ -324,6 +321,7 @@ margin-top: 20px;
   height: 38px;
   padding: 6px 22px;
   border-radius: 4px;
+  border-color: var(--secondary-bg-color);
 
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -331,7 +329,7 @@ margin-top: 20px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--title-text-color);
+  color: var(--color-button-filters);
   background-color: var(--secondary-bg-color);
 }
 
@@ -347,7 +345,29 @@ margin-top: 20px;
 
 /* результат фільтра */
 
+.list-filters {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 30px;
+  margin-top: 50px;
+  
+}
+
+/* .list-filters .list-card + .list-card {
+  margin-left: 30px;
+} */
+
+.list-card {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .card .service-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -356,6 +376,9 @@ margin-top: 20px;
 }
 
 .service-type {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -366,7 +389,6 @@ margin-top: 20px;
 /* контейнери */
 
 .container {
-  outline: 1px dashed red;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
