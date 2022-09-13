@@ -254,8 +254,12 @@ a {
 }
 /* наша команда */
 
-.listed {
+.section.section-studia.section-team {
   background-color: var(--secondary-bg-color);
+}
+
+.listed {
+  background-color: var(--header-bg-color);
 }
 
 .team {
