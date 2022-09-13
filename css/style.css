@@ -12,6 +12,7 @@ font-family: 'Roboto', sans-serif; */
   --hero-bg-color: #2f303a;
   --contact-footer-color: rgba(255, 255, 255, 0.6);
   --color-button-filters: rgba(33, 33, 33, 1);
+  --border-header-color: rgba(236, 236, 236, 1);
 }
 
 body {
@@ -52,6 +53,10 @@ a {
 }
 
 /* хедер */
+
+.header {
+  border-bottom: 1px solid var(--border-header-color);
+}
 
 .logo {
   display: block;
@@ -241,7 +246,6 @@ a {
 
 .work .list {
   display: flex;
-  justify-content: center;
   margin-top: 50px;
 }
 
@@ -250,7 +254,7 @@ a {
 }
 /* наша команда */
 
-.section-team {
+.listed {
   background-color: var(--secondary-bg-color);
 }
 
@@ -406,5 +410,5 @@ a {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
 }
